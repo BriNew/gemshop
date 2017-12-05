@@ -1,0 +1,38 @@
+header {
+	background-color: black;
+	height: 40px;
+	opacity: 0.9;
+}
+.header_container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+
+
+header ul {
+	max-width: 1000px;
+    list-style-type: none;
+    margin-bottom: 50px;
+
+
+
+}
+
+header li {
+	display: inline-block;
+	float: right;
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 50px;
+}
+
+header a  {
+	color: white;
+	text-decoration: none;
+}
+
+header p {
+	color: white;
+}

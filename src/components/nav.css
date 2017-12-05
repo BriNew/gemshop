@@ -1,0 +1,37 @@
+nav {
+	background-color: black;
+	height: 40px;
+	opacity: 0.7;
+}
+
+ul {
+	max-width: 1000px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+	display: inline-block;
+	float: right;
+	padding: 12px 10px 10px 10px;
+
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/*.results, .results_static, .banner{
+  display: flex;
+}
+
+@media (max-width: 379px) { 
+  .results, .frame_post_container {
+    flex-direction: column;
+    margin-top: 256px;
+  }
+
+}*/

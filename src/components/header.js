@@ -10,7 +10,7 @@ export class Header extends React.Component {
 						 
 						<ul>
 							<li>
-								<p class="hours">Open Sunday - Saturday 10AM to 5PM.</p>
+								<h1 banner="hours">Chapman's Gem & Mineral Shop</h1>
 							</li>
 							<li>
 								<a target="_blank" href="https://www.facebook.com/pages/Chapmans-Gem-Mineral-Shop-Museum/127570647298100" class="fa fa-facebook"></a>
@@ -32,4 +32,5 @@ export class Header extends React.Component {
 			);
 	}
 };
+
 

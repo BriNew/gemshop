@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import {Header} from './components/header';
-import {Nav} from './components/nav';
-import {Slideshow} from './components/slideshow';
-import {SlideshowArrows} from './components/slideshowarrows';
-
+import {App} from './components/app';
+import {ContactMain} from './components/contactmain';
 
 ReactDOM.render(
 	<div>
 		<Header />
-		<Nav />
-		<Slideshow />
-		<SlideshowArrows />
-	</div>,
+		<BrowserRouter>
+    		<App />
+  		</BrowserRouter>
+  	</div>,
+
 	document.getElementById('root')
 );
 

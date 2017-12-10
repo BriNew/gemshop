@@ -1,34 +1,35 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './nav.css';
+import {Story} from './story';
+import {Widgets} from './widgets';
+import {Photos} from './photos';
 
 export class Nav extends React.Component {
 	render() {
 		return(
-			<nav>
-				<ul>
-
-					<li>
-						<a className="About" href="#">
-							About
-						</a>
-					</li>
-					<li>
-						<a className="Gallery" href="#">
-							Gallery
-						</a>
-					</li>
-					<li>
-						<a className="Museum" href="#">
-							Museum
-						</a>
-					</li>
-					<li>
-						<a className="Contact" href="#">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div>
+				<nav>
+					<ul>					
+						<li>
+							<Link to='/contactmain'>Contact</Link>
+						</li>
+						<li>
+							<Link to='/photos'>Gallery</Link>
+						</li>
+						<li>
+							<Link to='/museum'>Museum</Link>
+						</li>
+						<li>
+							<Link to='/about'>About</Link>
+						</li>
+						<li>
+							<Link to='/'>Home</Link>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			);
 	}
+
 };

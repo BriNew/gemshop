@@ -24,6 +24,11 @@ nav a {
 	text-decoration: none;
 }
 
+nav a:hover {
+/*    opacity: 0.8;*/
+    color: yellow;
+}
+
 /*.results, .results_static, .banner{
   display: flex;
 }

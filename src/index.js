@@ -5,6 +5,8 @@ import './index.css';
 import {Header} from './components/header';
 import {App} from './components/app';
 import {ContactMain} from './components/contactmain';
+import {Slideshow} from './components/slideshow';
+
 
 ReactDOM.render(
 	<div>
@@ -12,6 +14,8 @@ ReactDOM.render(
 		<BrowserRouter>
     		<App />
   		</BrowserRouter>
+
+
   	</div>,
 
 	document.getElementById('root')

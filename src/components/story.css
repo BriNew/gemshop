@@ -1,0 +1,9 @@
+.story {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.line_break {
+  white-space: pre-line;
+}

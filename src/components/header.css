@@ -1,7 +1,7 @@
 header {
-	background-color: black;
+	background-color: #2E5266;
 	height: 50px;
-	opacity: 0.9;
+	opacity: 0.98;
 }
 
 .header_container{
@@ -20,16 +20,16 @@ header li {
 }
 
 header a  {
-	color: white;
+	color: #D3D0CB;
 	text-decoration: none;
 }
 
 header .fa:hover {
-    color: yellow;
+    color: #E2C044;
 }
 
 header h1 {
-	color: white;
+	color: #D3D0CB;
 	margin-top: 1%;
 	padding-right: 10em;
 }

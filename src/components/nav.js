@@ -1,16 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './nav.css';
-import {Story} from './story';
-import {Widgets} from './widgets';
-import {Photos} from './photos';
+
 
 export class Nav extends React.Component {
 	render() {
 		return(
 			<div>
 				<nav>
-					<ul>					
+					<ul>
+						<li>
+							<Link to='/rocks'>Inventory</Link>
+						</li>					
 						<li>
 							<Link to='/contactmain'>Contact</Link>
 						</li>

@@ -7,6 +7,7 @@ import {Photos} from './photos';
 import {ContactMain} from './contactmain';
 import {Museum} from './museum';
 import {store} from "./store";
+import {Rocks} from "./rocks";
 
 
 
@@ -21,6 +22,7 @@ export class Main extends React.Component {
 				      <Route path='/photos' component={Photos}/>
 				      <Route path='/museum' component={Museum}/>
 				      <Route path='/contactmain' component={ContactMain}/>
+				      <Route path='/rocks' component={Rocks}/>
 				    </Switch>
 				  </main>
 				</div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Nav} from './nav';
 import {Main} from './main';
-import {Rocks} from "./rocks";
 
 export class App extends React.Component {
 
@@ -10,7 +9,6 @@ export class App extends React.Component {
 			<div>
     			<Nav />
     			<Main />
-    			<Rocks />
   			</div>
 			);
 	}

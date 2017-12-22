@@ -9,8 +9,6 @@ import {Museum} from './museum';
 import {store} from "./store";
 import {Rocks} from "./rocks";
 
-
-
 export class Main extends React.Component {
 	render() {
 		return(

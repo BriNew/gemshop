@@ -30,7 +30,7 @@ const Contact = props => {
 	      <div>
 	        <label>Message</label>
 	        <div>
-	          <Field name="notes" component="textarea" />
+	          <Field name="message" component="textarea" />
 	        </div>
 	      </div>
 	      <div>

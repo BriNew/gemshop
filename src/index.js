@@ -4,7 +4,6 @@ import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import {Header} from './components/header';
 import {App} from './components/app';
-import {ContactMain} from './components/contactmain';
 import {Slideshow} from './components/slideshow';
 
 

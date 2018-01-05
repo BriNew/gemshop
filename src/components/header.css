@@ -16,12 +16,13 @@ header ul {
 
 header li {
 	display: inline-block;
-	padding: 0px 10px 10px 10px;
-}
+/*	padding: 0px 10px 10px 10px;
+*/}
 
 header a  {
 	color: #D3D0CB;
 	text-decoration: none;
+		padding: 0px 10px 10px 10px;
 }
 
 header .fa:hover {

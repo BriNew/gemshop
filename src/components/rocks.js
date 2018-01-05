@@ -12,12 +12,19 @@ export class Rocks extends React.Component {
     this.deleteRock=this.deleteRock.bind(this)
     this.editRock=this.editRock.bind(this)
   }
-
+  
   componentDidMount() {
-    fetch('http://localhost:8080/rocks')
+    var token = localStorage.getItem("key");
+    fetch('http://localhost:8080/rocks', {
+      method: 'GET',
+      headers: {
+        'Authorization': `bearer ${token}`
+      }
+    })
     .then(results => {
     	return results.json();
     }).then(data => {
+      console.log(data);
     	let rock = data.rocks.map((data, i) => {
     		return(
     			<div key={i} className="rocks" >
@@ -26,7 +33,7 @@ export class Rocks extends React.Component {
     				<p>{data.size}</p>
     				<p>{data.color}</p>
             <p>{data.id}</p>
-            <button onClick={this.deleteRock}>Remove</button>        
+           <button onClick={() => this.deleteRock(data.id)}>Remove</button>        
             <button onClick={this.editRock}>Edit</button>
     			</div>
     			)
@@ -53,16 +60,14 @@ export class Rocks extends React.Component {
     })
   }
 
-  deleteRock() {
-      console.log('deleting rock');
-      fetch('http://localhost:8080/rocks/5a3c9cc057930b1bc48e3e5a', {
+  deleteRock(e) {
+      console.log(e);
+      fetch(`http://localhost:8080/rocks/${e}`, {
         method: 'DELETE',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({    
-      })
 
     })
   }
@@ -123,5 +128,14 @@ export class Rocks extends React.Component {
   }
 }
 
+    // handleClickDelete(e) {
+    //   e.preventDefault();
+    //   this.deleteRock('element clicked');
+    // }
+   
+
+//handle clicks or constructor? no preventDefault with constructor
+//delete
+//authentication, where to start
 
 

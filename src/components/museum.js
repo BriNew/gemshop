@@ -8,6 +8,7 @@ export class Museum extends React.Component {
 					Museum page
 				</p>
 			</div>
+			
 			)
 	}
 }

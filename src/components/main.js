@@ -8,7 +8,8 @@ import {ContactMain} from './contactmain';
 import {Museum} from './museum';
 import {store} from "./store";
 import {Rocks} from "./rocks";
-import {Authentication} from "./authentication";
+import {SignIn} from "./signin";
+import {SignUp} from "./signup";
 
 export class Main extends React.Component {
 	render() {
@@ -20,9 +21,10 @@ export class Main extends React.Component {
 				      <Route path='/about' component={Story}/>
 				      <Route path='/photos' component={Photos}/>
 				      <Route path='/museum' component={Museum}/>
-				      <Route path='/contactmain' component={ContactMain}/>
+				      <Route path='/contactmain' component={Museum}/>
 				      <Route path='/rocks' component={Rocks}/>
-				      <Route path='/authentication' component={Authentication}/>
+				      <Route path='/signin' component={SignIn}/>
+				      <Route path='/signup' component={SignUp}/>
 				    </Switch>
 				  </main>
 				</div>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-export class Authentication extends React.Component {
+export class SignIn extends React.Component {
     constructor(props) {
         super(props);
         this.logInUser=this.logInUser.bind(this)
-        this.signUpUser=this.signUpUser.bind(this)
     }
+
 
     logInUser(e) {
         e.preventDefault();
@@ -32,26 +32,11 @@ export class Authentication extends React.Component {
             console.log(response);
             const {token} = response;
             localStorage.setItem('key', token );
+            window.location.href = "/rocks";
         }).catch(function(error) {
             console.log(error, "not okay");
             alert('credentials are not valid');
         });
-      }
-
-
-      signUpUser() {
-        console.log('signing up');
-        fetch('http://localhost:8080/users', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            username: document.getElementById('username').value,
-            password: document.getElementById('password').value
-          })
-        })
       }
 
     render() {

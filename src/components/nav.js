@@ -10,7 +10,10 @@ export class Nav extends React.Component {
 				<nav>
 					<ul className="nav_ul">
 						<li className="nav_li">
-							<Link to='/authentication'>Sign In</Link>
+							<Link to='/signup'>Sign Up</Link>
+						</li>
+						<li className="nav_li">
+							<Link to='/signin'>Sign In</Link>
 						</li>	
 						<li className="nav_li">
 							<Link to='/rocks'>Inventory</Link>
@@ -27,7 +30,7 @@ export class Nav extends React.Component {
 						<li className="nav_li">
 							<Link to='/about'>About</Link>
 						</li>
-						<li className="nav_li">
+						<li className="nav_li ">
 							<Link to='/'>Home</Link>
 						</li>
 						<li className="social_li social_li_fb">
@@ -43,7 +46,7 @@ export class Nav extends React.Component {
 							<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g32404-d2161569-Reviews-Chapman_s_Gem_Mineral_Shop_Museum-Fortuna_Humboldt_County_California.html" className="fa fa-tripadvisor"></a>
 						</li>
 					</ul>
-					<div id="hamburger">
+					<div className="hamburger">
 
 					    <input type="checkbox" />
 					       
@@ -51,7 +54,7 @@ export class Nav extends React.Component {
 					    <span></span>
 					    <span></span>
 					    
-					    <ul id="hamburger_menu">
+					    <ul className="hamburger_menu">
 					      <a href="#"><li>Home</li></a>
 					      <a href="#"><li>About</li></a>
 					      <a href="#"><li>Museum</li></a>

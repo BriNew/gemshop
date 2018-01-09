@@ -1,3 +1,114 @@
+@media (min-width: 801px) {
+  .hamburger {
+  display: none;
+}
+}
+
+@media (max-width: 800px) { 
+  .nav_li {
+    display: none;
+  }
+
+  body{
+  overflow-x: hidden; 
+}
+
+  .hamburger{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  }
+
+.hamburger input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  }
+
+.hamburger span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #D3D0CB;
+  border-radius: 3px;
+  
+  z-index: 2;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s,
+              background 0.5s,
+              opacity 0.55s;
+}
+
+.hamburger span:first-child{
+  transform-origin: 0% 0%;
+}
+
+.hamburger span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+.hamburger input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #D3D0CB;
+}
+
+.hamburger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger input:checked ~ span:nth-last-child(2){
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.hamburger_menu{
+
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  margin: -100px 0 0 0px;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: #2E5266;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.hamburger_menu li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.hamburger input:checked ~ ul{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+}
+
 nav {
 	background-color: #2E5266;
 	height: 40px;
@@ -13,7 +124,7 @@ nav {
 }
 
 .nav_li {
-	display: inline-block;
+/*	display: inline-block;*/
 	float: right;
 	padding: 12px 10px 10px 10px;
 
@@ -46,7 +157,7 @@ a:hover
   color: white;
 }
 
-#hamburger
+/*#hamburger
 {
   display: block;
   position: relative;
@@ -145,7 +256,7 @@ a:hover
 #hamburger input:checked ~ ul
 {
   transform: none;
-}
+}*/
 
 /*.results, .results_static, .banner{
   display: flex;

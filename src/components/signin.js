@@ -1,11 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {Slideshow} from './slideshow';
+import './signin.css';
+
 
 export class SignIn extends React.Component {
     constructor(props) {
         super(props);
         this.logInUser=this.logInUser.bind(this)
     }
-
 
     logInUser(e) {
         e.preventDefault();
@@ -41,22 +44,40 @@ export class SignIn extends React.Component {
 
     render() {
         return(
-            <form onSubmit={this.logInUser}>
-                <div>
-                    <label>Username:</label>
-                    <input id="username" type="text" name="username"/>
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input id="password" type="password" name="password"/>
-                </div>
-                <div>
-                    <input type="submit" value="Log In"/>
-                </div>
-                <div>
+            <div>
+                <Slideshow />
+                <div className="sign_in_container_container">
+                    <ul className="sign_in_title">
+                        <li className="sign_in"><h2>Sign&nbsp;In</h2></li>
+                    </ul>
+                    <div className="sign_in_container">
+                        <div className = "sign_in_info">
                     
+                            <form onSubmit={this.logInUser}>
+                                <div>
+                                    <label>Username:</label>
+                                    <input id="username" type="text" name="username"/>
+                                </div>
+                                <div>
+                                    <label>Password:</label>
+                                    <input id="password" type="password" name="password"/>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Log In"/>
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </form>
+                            
+                            <p className="sign_in_instructions">Not a registered user? Sign up <Link to='/signup' className="sign_up_link">here.</Link></p>
+                            
+                            
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
+
             );
     }
 };

@@ -1,10 +1,10 @@
-.story_container_container {
+.museum_container_container {
 	background-color: #6E8898;
 	height: 500px;	
 
 }
 
-.story_container {
+.museum_container {
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
@@ -12,7 +12,7 @@
 
 }
 
-.story_title {
+.museum_title {
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
@@ -20,7 +20,7 @@
 
 }
 
-.about {
+.museum {
 
 	display: inline-block;
 	color: white;
@@ -34,6 +34,8 @@
 
 h2 {
 	transform: skew(-40deg,0deg);	
+
+
 }
 
 

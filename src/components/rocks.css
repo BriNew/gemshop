@@ -4,3 +4,46 @@
 	padding: 20px 10px 10px 10px ;
 	margin: 20px 10px 10px 10px ;
 }
+
+.inv_container_container {
+	background-color: #6E8898;
+	height: 500px;	
+
+}
+
+.inv_container {
+	max-width: 1000px; 
+	margin: 0 auto;
+	background-color: #6E8898;
+/*	height: 500px;*/
+
+}
+
+.inv_title {
+
+	background-color: #D3D0CB;
+	padding-left: 20%;
+
+
+}
+
+.inv {
+
+	display: inline-block;
+	color: white;
+	padding-bottom: -20px;
+	margin: auto;
+	background-color: #6E8898;
+	padding-left: 4%;
+	padding-right: 4%;
+	transform: skew(40deg,0deg);
+}
+
+h2 {
+	transform: skew(-40deg,0deg);	
+
+
+}
+
+
+

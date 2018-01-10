@@ -21,26 +21,36 @@ export class Rocks extends React.Component {
         'Authorization': `bearer ${token}`
       }
     })
-    .then(results => {
-    	return results.json();
+    .then(function(results) {
+        if (!results.ok) {
+            console.log('not okay');
+            throw Error(results.statusText);
+        }
+        return results.json();
     }).then(data => {
+      console.log('ok');
       console.log(data);
-    	let rock = data.rocks.map((data, i) => {
-    		return(
-    			<div key={i} className="rocks" >
-    				<p>{data.type}</p>
-    				<p>{data.origin}</p>
-    				<p>{data.size}</p>
-    				<p>{data.color}</p>
+      let rock = data.rocks.map((data, i) => {
+        return(
+          <div key={i} className="rocks" >
+            <p>{data.type}</p>
+            <p>{data.origin}</p>
+            <p>{data.size}</p>
+            <p>{data.color}</p>
             <p>{data.id}</p>
            <button onClick={() => this.deleteRock(data.id)}>Remove</button>        
             <button onClick={this.editRock}>Edit</button>
-    			</div>
-    			)
-    	})
-    	this.setState({rocks: rock});
-    	console.log("state", this.state.rocks)
-    })
+          </div>
+          )
+      })
+      this.setState({rocks: rock});
+      console.log("state", this.state.rocks)
+    }).catch(function(error) {
+        console.log(error, "not okay");
+        // alert('credentials are not valid');
+        window.location.href = "/signin";
+    });
+    
   }
 
   createRock() {
@@ -128,14 +138,5 @@ export class Rocks extends React.Component {
   }
 }
 
-    // handleClickDelete(e) {
-    //   e.preventDefault();
-    //   this.deleteRock('element clicked');
-    // }
-   
-
-//handle clicks or constructor? no preventDefault with constructor
-//delete
-//authentication, where to start
 
 

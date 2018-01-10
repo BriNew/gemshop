@@ -1,4 +1,7 @@
 import React from 'react';
+import './signup.css';
+import {Slideshow} from './slideshow';
+
 
 export class SignUp extends React.Component {
     constructor(props) {
@@ -22,24 +25,17 @@ export class SignUp extends React.Component {
         })
       }
 
-      // .then(function(response) {
-      //   if (!response.ok) {
-      //       throw Error(response.statusText);
-      //   }
-      //   return response.json();
-      //   }).then(function(response) {
-      //       console.log("ok");
-      //       console.log(response);
-      //       const {token} = response;
-      //       localStorage.setItem('key', token );
-      //   }).catch(function(error) {
-      //       console.log(error, "not okay");
-      //       alert('credentials are not valid');
-      //   });
-
     render() {
         return(
-            <form onSubmit={this.signUpUser}>
+            <div>
+        <Slideshow />
+        <div className="sign_up_container_container">
+          <ul className="sign_up_title">
+            <li className="sign_up"><h2>Sign&nbsp;Up</h2></li>
+          </ul>
+          <div className="sign_up_container">
+            <div className = "sign_up_info">
+              <form onSubmit={this.signUpUser}>
                 <div>
                     <label>Username:</label>
                     <input id="username" type="text" name="username"/>
@@ -51,7 +47,11 @@ export class SignUp extends React.Component {
                 <div>
                     <input type="submit" value="Sign Up"/>
                 </div>
-            </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
             );
     }
 };

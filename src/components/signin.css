@@ -1,10 +1,23 @@
-.story_container_container {
+.sign_in_instructions {
+	color: white;	
+}
+
+.sign_up_link {
+	color: #E2C044;
+	font-weight: bold;
+}
+
+.sign_up_link:hover {
+	color: #2E5266;
+}
+
+.sign_in_container_container {
 	background-color: #6E8898;
 	height: 500px;	
 
 }
 
-.story_container {
+.sign_in_container {
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
@@ -12,7 +25,7 @@
 
 }
 
-.story_title {
+.sign_in_title {
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
@@ -20,15 +33,15 @@
 
 }
 
-.about {
+.sign_in {
 
 	display: inline-block;
 	color: white;
 	padding-bottom: -20px;
 	margin: auto;
 	background-color: #6E8898;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 5%;
+	padding-right: 5%;
 	transform: skew(40deg,0deg);
 }
 

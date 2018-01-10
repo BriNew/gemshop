@@ -1,9 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import './nav.css';
 
 
 export class Nav extends React.Component {
+	logInRoute(e) {
+        e.preventDefault();
+        var token = localStorage.getItem("key");
+        console.log('logInRoute called');
+        console.log('token');
+        if(token = null) {
+            window.location.href = "/login";
+        }
+    }
 	render() {
 		return(
 			<div>
@@ -15,7 +24,7 @@ export class Nav extends React.Component {
 						<li className="nav_li">
 							<Link to='/signin'>Sign In</Link>
 						</li>	
-						<li className="nav_li">
+						<li onClick={this.logInUser} className="nav_li">
 							<Link to='/rocks'>Inventory</Link>
 						</li>					
 						<li className="nav_li">

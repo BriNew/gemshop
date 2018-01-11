@@ -9,7 +9,7 @@ const Contact = props => {
 	        <label>Name</label>
 	        <div>
 	          <Field
-	            name="Name"
+	            name="name"
 	            component="input"
 	            type="text"
 	            placeholder="Name"

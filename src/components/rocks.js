@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Slideshow} from './slideshow';
 import './rocks.css';
 
 export class Rocks extends React.Component {
@@ -14,7 +14,7 @@ export class Rocks extends React.Component {
   }
   
   componentDidMount() {
-    var token = localStorage.getItem("key");
+    let token = localStorage.getItem("key");
     fetch('http://localhost:8080/rocks', {
       method: 'GET',
       headers: {
@@ -47,6 +47,7 @@ export class Rocks extends React.Component {
       console.log("state", this.state.rocks)
     }).catch(function(error) {
         console.log(error, "not okay");
+        localStorage.removeItem("key");
         // alert('credentials are not valid');
         window.location.href = "/signin";
     });
@@ -103,37 +104,52 @@ export class Rocks extends React.Component {
   render() {
   	return (
     	<div>
-    		{this.state.rocks}
-        <form>
-            <div>
-              <label>type</label>
+        <Slideshow />
+        <div className="inv_container_container">
+          <ul className="inv_title">
+            <li className="inv"><h2>Inventory</h2></li>
+          </ul>
+          <div className="inv_container">
+            <div className = "inv_info">
               <div>
-                  <input id= "type" name="type"></input>           
-              </div>
-            </div>
-            <div>
-              <label>origin</label>
+            {this.state.rocks}
+            <form>
+                <div>
+                  <label>type</label>
+                  <div>
+                      <input id= "type" name="type"></input>           
+                  </div>
+                </div>
+                <div>
+                  <label>origin</label>
+                  <div>
+                      <input id= "origin" name="origin"></input>           
+                  </div>
+                </div>
+                <div>
+                  <label>size</label>
+                  <div>
+                      <input id= "size" name="size"></input>           
+                  </div>
+                </div>
+                <div>
+                  <label>color</label>
+                  <div>
+                      <input id= "color" name="color"></input>           
+                  </div>
+                </div>
+                <div>
+                  <button onClick={this.createRock}>Add</button>
+                </div>
+              </form>
               <div>
-                  <input id= "origin" name="origin"></input>           
-              </div>
+              
             </div>
-            <div>
-              <label>size</label>
-              <div>
-                  <input id= "size" name="size"></input>           
-              </div>
-            </div>
-            <div>
-              <label>color</label>
-              <div>
-                  <input id= "color" name="color"></input>           
-              </div>
-            </div>
-            <div>
-              <button onClick={this.createRock}>Add</button>
-            </div>
-          </form>
+          </div>
+        </div>
+      </div>
     	</div>
+      </div>
   		)
   }
 }

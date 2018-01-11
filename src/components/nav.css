@@ -32,7 +32,7 @@
   cursor: pointer;
   
   opacity: 0; 
-  z-index: 2; 
+  z-index: 6; 
   }
 
 .hamburger span{
@@ -45,7 +45,7 @@
   background: #D3D0CB;
   border-radius: 3px;
   
-  z-index: 2;
+  z-index: 5;
   
   transform-origin: 4px 0px;
   
@@ -82,7 +82,7 @@
 .hamburger_menu{
 
   position: absolute;
-  z-index: 5;
+/*  z-index: 3000;*/
   width: 300px;
   margin: -100px 0 0 0px;
   padding: 50px;
@@ -116,7 +116,7 @@ nav {
 }
 
 .nav_ul {
-	  max-width: 1000px;
+/*	  max-width: 1000px;*/
     list-style-type: none;
     margin: auto;
     padding: 0;

@@ -11,7 +11,7 @@ import {Rocks} from "./rocks";
 import {SignIn} from "./signin";
 import {SignUp} from "./signup";
 import {PhotoGallery} from "./gallery";
-
+import {LogOut} from "./logout";
 
 export class Main extends React.Component {
 	render() {
@@ -27,6 +27,7 @@ export class Main extends React.Component {
 				      <Route path='/rocks' component={Rocks}/>
 				      <Route path='/signin' component={SignIn}/>
 				      <Route path='/signup' component={SignUp}/>
+				      <Route path='/logout' component={LogOut}/>
 				    </Switch>
 				  </main>
 			</div>

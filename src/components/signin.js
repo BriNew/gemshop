@@ -23,18 +23,21 @@ export class SignIn extends React.Component {
             username: document.getElementById('username').value,
             password: document.getElementById('password').value
           })
-
         })
+
         .then(function(response) {
         if (!response.ok) {
             throw Error(response.statusText);
         }
         return response.json();
         }).then(function(response) {
+            const currentUser = document.getElementById('username').value;
+            console.log('user: ' + currentUser);
             console.log("ok");
             console.log(response);
             const {token} = response;
             localStorage.setItem('key', token );
+            localStorage.setItem('user', document.getElementById('username').value );
             window.location.href = "/rocks";
         }).catch(function(error) {
             console.log(error, "not okay");

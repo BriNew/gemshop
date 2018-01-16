@@ -2,9 +2,13 @@ header {
 	background-color: #2E5266;
 	height: 60px;
 	opacity: 0.98;
-	margin-top: 0px;
+/*	margin-top: 0px;*/
 	width: 100%;
 }
+	h1 {
+		margin-left: 10px;
+	}
+
 
 .header_container{
 	max-width: 1000px;
@@ -17,7 +21,7 @@ header {
 	margin-top: 1%;
 }
 
-.banner_mobile {
+.banner_mobile, .banner_mobile_narrow {
 	display: none;
 }
 
@@ -44,7 +48,7 @@ header {
   display: flex;
 }*/
 
-@media (max-width: 1000px) { 
+@media (max-width: 1000px) and (min-width: 369px) { 
   .banner_fullscreen {
     display: none;
   }
@@ -54,4 +58,37 @@ header {
 	margin-top: 1%;
   }
 
+}
+
+@media (max-width: 641px) { 
+header {
+	padding-bottom: 75px;
+}
+.header_container{
+/*	display: block;*/
+}
+
+.current_user_logout_container {
+	float: none;
+	margin-right: 0;
+	margin-top: -34px;
+	margin-left: 12px;
+
+}
+
+.logout_container {
+
+}
+
+}
+
+@media (max-width: 368px) { 
+.banner_fullscreen, .bannner_mobile {
+	display: none;
+  }
+.banner_mobile_narrow {
+  	display: block;
+  	color: #D3D0CB;
+	margin-top: 1%;
+  }
 }

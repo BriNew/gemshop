@@ -18,6 +18,7 @@
 }
 
 .sign_in_container {
+
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
@@ -26,6 +27,7 @@
 }
 
 .sign_in_title {
+
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
@@ -43,6 +45,11 @@
 	padding-left: 5%;
 	padding-right: 5%;
 	transform: skew(40deg,0deg);
+}
+
+.sign_in_form {
+
+
 }
 
 h2 {

@@ -19,10 +19,13 @@
 .widget_container_container {
 	background-color: #6E8898;
 	height: 500px;	
+	margin-top: 160px;
+/*	opacity: .9;*/
 
 }
 
 .widget_container {
+
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
@@ -34,33 +37,38 @@
 
 	background-color: #D3D0CB;
 
-
+	padding-left: 20%;
+	background: rgba(211, 208, 203, 0.8);
+	margin-bottom: -160px;
+    margin-top: 135px;
 /*	display: none;*/
 
 
 }
 
-.reviews, .location {
-
+.location {
 	display: inline-block;
 	color: white;
 	padding-bottom: -20px;
-	margin: auto;
+/*	margin: auto;*/
 	background-color: #6E8898;
 	padding-left: 3%;
 	padding-right: 3%;
 	transform: skew(40deg,0deg);
+
 }
 
 h2 {
 	transform: skew(-40deg,0deg);	
+
 }
 
-.reviews {
+/*.reviews {
+
 	margin-left: 13.5%;
-	margin-right: 27%;
+	margin-right: 20%;
 
-}
+}*/
 
  .map_widget {
 	display: inline-block;

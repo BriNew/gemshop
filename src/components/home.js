@@ -8,7 +8,7 @@ export class Home extends React.Component {
 		
 		return (
 			<div>
-				<Slideshow />
+
 				<Widgets />
 			</div>
 			)

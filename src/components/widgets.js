@@ -4,11 +4,15 @@ import './widgets.css';
 export class Widgets extends React.Component {
 	render() {
 		return(
-			<div className="widget_container_container">
-				<ul className="widget_titles">
-				        <li className="reviews"><h2>Reviews</h2></li>
+			<div>
+			<div>
+			<ul className="widget_titles">
+	
 				        <li className="location"><h2>Location</h2></li>
 				      </ul>
+			</div>
+			<div className="widget_container_container">
+				
 		    	<div className="widget_container" className="widget_container">
 				      
 			      <div id="TA_selfserveprop774" className="ta_widget_container_desktop">
@@ -28,6 +32,7 @@ export class Widgets extends React.Component {
 			      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-VJ-QsO1FQRIQFQSgU1gvc&key=AIzaSyDrWGFKHiOsKlelMMMxkl0_J_KBOCThMmU" 
 			      allowfullscreen></iframe>
 			    </div>
+			</div>
 			</div>
 			)
 	}

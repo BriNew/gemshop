@@ -3,38 +3,41 @@ import './header.css';
 import {LogOut} from './logout';
 import {SignIn} from './signin';
 
+let token = localStorage.getItem("key");
 let currentUser = localStorage.getItem("user");
 
 export class Header extends React.Component {
 	constructor(props) {
         super(props);
-        this.users=this.users.bind(this)
+         if(currentUser){
+           this.state={loggedIn: true}; 
+        }
+        else{
+        	this.state={loggedIn: false};
+        }
     } 
 
-	users() {
-		// let token = localStorage.getItem("key");
-		// if(token != null){
-		// 	return <LogOut />;
-		// }
-		// else {
-		// 	console.log('null' + token);
-		// }
-		return <LogOut />;
-	}
 
 	render() {
+		let loggedInMessage;
+		let logOutButton;
+		if(this.state.loggedIn){
+			loggedInMessage = <h3 className="current_user">Hello {currentUser}</h3>
+			logOutButton = <LogOut />
+		}
 		return(
 			<header>
 				<div className="header_container">
 					<h1 className="banner_fullscreen">Chapman's Gem & Mineral Shop</h1>
 					<h1 className="banner_mobile">Chapman's Gem Shop</h1>
+					<h1 className="banner_mobile_narrow">Chapman's</h1>
 				</div>	
 				<div className="current_user_logout_container">
 					<div className="current_user_container">
-						<h3 className="current_user">Welcome {currentUser}</h3>
+						{loggedInMessage}
 					</div>
 					<div className="logout_container">
-						<LogOut />
+						{logOutButton}
 					</div>
 				</div>
 

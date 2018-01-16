@@ -6,7 +6,7 @@ import './nav.css';
 export class Nav extends React.Component {
 	logInRoute(e) {
         e.preventDefault();
-        var token = localStorage.getItem("key");
+        let token = localStorage.getItem("key");
         console.log('logInRoute called');
         console.log('token');
         if(token = null) {
@@ -18,9 +18,6 @@ export class Nav extends React.Component {
 			<div>
 				<nav>
 					<ul className="nav_ul">
-						<li className="nav_li">
-							<Link to='/signup'>Sign Up</Link>
-						</li>
 						<li className="nav_li">
 							<Link to='/signin'>Sign In</Link>
 						</li>	
@@ -59,18 +56,18 @@ export class Nav extends React.Component {
 
 					    <input type="checkbox" />
 					       
-					    <span></span>
-					    <span></span>
-					    <span></span>
+					    <span className="burger"></span>
+					    <span className="burger"></span>
+					    <span className="burger"></span>
 					    
 					    <ul className="hamburger_menu">
-					      <a href="#"><li>Home</li></a>
-					      <a href="#"><li>About</li></a>
-					      <a href="#"><li>Museum</li></a>
-					      <a href="#"><li>Gallery</li></a>
-					      <a href="#"><li>Contact</li></a>
-					      <a href="#"><li>Inventory</li></a>
-					      <a href="#"><li>Sign In</li></a>
+					      <a><li><Link to='/'>Home</Link></li></a>
+					      <a><li><Link to='/about'>About</Link></li></a>
+					      <a><li><Link to='/museum'>Museum</Link></li></a>
+					      <a><li><Link to='/photos'>Gallery</Link></li></a>
+					      <a><li><Link to='/contactmain'>Contact</Link></li></a>
+					      <a><li><Link to='/rocks'>Inventory</Link></li></a>
+					      <a><li><Link to='/signin'>Sign In</Link></li></a>
 					    </ul>
 					  </div>
 				</nav>

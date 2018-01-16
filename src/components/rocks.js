@@ -33,13 +33,15 @@ export class Rocks extends React.Component {
       let rock = data.rocks.map((data, i) => {
         return(
           <div key={i} className="rocks" >
-            <p>{data.type}</p>
-            <p>{data.origin}</p>
-            <p>{data.size}</p>
-            <p>{data.color}</p>
-            <p>{data.id}</p>
-           <button onClick={() => this.deleteRock(data.id)}>Remove</button>        
-            <button onClick={this.editRock}>Edit</button>
+            <p>Type: {data.type}</p>
+            <p>Origin: {data.origin}</p>
+            <p>Size: {data.size}</p>
+            <p>Color: {data.color}</p>
+            <p>Id: {data.id}</p>
+            <div className="button_container">
+              <button className="remove_button" onClick={() => this.deleteRock(data.id)}>Remove</button>        
+              <button className="edit_button" onClick={this.editRock}>Edit</button>
+            </div>
           </div>
           )
       })
@@ -112,36 +114,32 @@ export class Rocks extends React.Component {
           <div className="inv_container">
             <div className = "inv_info">
               <div>
-            {this.state.rocks}
-            <form>
+            <form className="rocks add_rocks">
                 <div>
-                  <label>type</label>
                   <div>
-                      <input id= "type" name="type"></input>           
+                      <input className="add_input" placeholder="Type" id= "type" name="type"></input>           
                   </div>
                 </div>
                 <div>
-                  <label>origin</label>
                   <div>
-                      <input id= "origin" name="origin"></input>           
+                      <input className="add_input" placeholder="Origin" id= "origin" name="origin"></input>           
                   </div>
                 </div>
                 <div>
-                  <label>size</label>
                   <div>
-                      <input id= "size" name="size"></input>           
+                      <input className="add_input" placeholder="Size" id= "size" name="size"></input>           
                   </div>
                 </div>
                 <div>
-                  <label>color</label>
                   <div>
-                      <input id= "color" name="color"></input>           
+                      <input className="add_input" placeholder="Color" id= "color" name="color"></input>           
                   </div>
                 </div>
-                <div>
-                  <button onClick={this.createRock}>Add</button>
+                <div className="button_container">
+                  <button className="add_button" onClick={this.createRock}>Add</button>
                 </div>
               </form>
+              {this.state.rocks}
               <div>
               
             </div>

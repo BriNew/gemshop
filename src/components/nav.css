@@ -16,8 +16,8 @@
   .hamburger{
   display: block;
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 10px;
+  right: 15px;
   z-index: 1;
   }
 
@@ -54,6 +54,11 @@
               opacity 0.55s;
 }
 
+.hamburger input:hover ~ span{
+  background: #E2C044;
+}
+
+
 .hamburger span:first-child{
   transform-origin: 0% 0%;
 }
@@ -65,7 +70,7 @@
 .hamburger input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #D3D0CB;
+  background: #E2C044;
 }
 
 .hamburger input:checked ~ span:nth-last-child(3)
@@ -82,9 +87,9 @@
 .hamburger_menu{
 
   position: absolute;
-/*  z-index: 3000;*/
+
   width: 300px;
-  margin: -100px 0 0 0px;
+  margin: -109px 0 0 0px;
   padding: 50px;
   padding-top: 125px;
   right: -100px;
@@ -110,6 +115,8 @@
 }
 
 nav {
+  position: relative;
+  z-index: 2;
 	background-color: #2E5266;
 	height: 40px;
 	opacity: 0.9;

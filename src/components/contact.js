@@ -28,6 +28,17 @@ const Contact = props => {
 	        </div>
 	      </div>
 	      <div>
+	        <label>Subject</label>
+	        <div>
+	          <Field
+	            name="subject"
+	            component="input"
+	            type="text"
+	            placeholder="subject"
+	          />
+	        </div>
+	      </div>
+	      <div>
 	        <label>Message</label>
 	        <div>
 	          <Field name="message" component="textarea" />

@@ -56,7 +56,7 @@ export class SignIn extends React.Component {
                     <div className="sign_in_container">
                         <div className = "sign_in_info">
                     
-                            <form onSubmit={this.logInUser}>
+                            <form className="sign_in_form" onSubmit={this.logInUser}>
                                 <div>
                                     <label>Username:</label>
                                     <input id="username" type="text" name="username"/>

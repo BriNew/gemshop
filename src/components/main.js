@@ -12,12 +12,14 @@ import {SignIn} from "./signin";
 import {SignUp} from "./signup";
 import {PhotoGallery} from "./gallery";
 import {LogOut} from "./logout";
+import '../index.css';
+
 
 export class Main extends React.Component {
 	render() {
 		return(
 			<div>
-				  <main>
+				  <main className="main_container">
 				    <Switch>
 				      <Route exact path='/' component={Home}/>
 				      <Route path='/about' component={Story}/>

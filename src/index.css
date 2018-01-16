@@ -8,5 +8,15 @@ body {
   font-family: sans-serif;
 }
 
+html {
+	background-image: url("https://source.unsplash.com/4psNpOezGzQ/1920x450");
+	background-repeat: no-repeat;
+}
+
+/*.main_container {
+	z-index: 1;
+	position: relative;
+}*/
+
 
 

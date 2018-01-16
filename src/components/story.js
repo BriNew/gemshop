@@ -8,7 +8,7 @@ export class Story extends React.Component {
 	render() {
 		return (
 			<div>
-				<Slideshow />
+
 				<div className="story_container_container">
 					<ul className="story_title">
 						<li className="about"><h2>About</h2></li>

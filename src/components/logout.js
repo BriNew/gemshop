@@ -1,7 +1,10 @@
 import React from 'react';
 // import './signup.css';
 import {Slideshow} from './slideshow';
+import {SignIn} from './signin';
+
 let token = localStorage.getItem("key");
+let currentUser = localStorage.getItem("user");
 
 
 export class LogOut extends React.Component {
@@ -12,10 +15,12 @@ export class LogOut extends React.Component {
 
 
       logOutUser(e) {
-        e.preventDefault();
+        // e.preventDefault();
         console.log('logging out');
         localStorage.removeItem("key");
+        localStorage.removeItem("user");
       }
+
 
     render() {
         return(

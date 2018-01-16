@@ -14,7 +14,7 @@ export class Slideshow extends React.Component {
 		let currentSlide = slides[0];
 		return(
 
-					<img src={currentSlide.src}/>
+					<img className="header_pic" src={currentSlide.src}/>
 					
 		);
 	}

@@ -1,12 +1,13 @@
 header {
 	background-color: #2E5266;
-	height: 60px;
+	height: 82px;
 	opacity: 0.98;
-/*	margin-top: 0px;*/
 	width: 100%;
 }
 	h1 {
 		margin-left: 10px;
+		padding-top: 10px;
+
 	}
 
 
@@ -33,6 +34,7 @@ header {
 .current_user_container {
 	display: inline-block;
 
+
 }
 
 .logout_container {
@@ -42,6 +44,8 @@ header {
 
 .current_user {
 	color: #D3D0CB;
+	border-bottom: 1px solid #E2C044;
+	padding-bottom: 6.7px;
 }
 
 /*.results, .results_static, .banner{

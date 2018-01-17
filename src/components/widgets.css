@@ -18,7 +18,7 @@
 
 .widget_container_container {
 	background-color: #6E8898;
-	height: 500px;	
+	height: 650px;	
 	margin-top: 160px;
 /*	opacity: .9;*/
 
@@ -52,8 +52,10 @@
 	padding-bottom: -20px;
 /*	margin: auto;*/
 	background-color: #6E8898;
-	padding-left: 3%;
-	padding-right: 3%;
+	padding-left: 44px;
+	padding-right: 44px;
+/*	padding-left: 3%;
+	padding-right: 3%;*/
 	transform: skew(40deg,0deg);
 
 }
@@ -70,12 +72,13 @@ h2 {
 
 }*/
 
- .map_widget {
+ .map_widget_container {
 	display: inline-block;
-
+	margin-top: 35px;
 }
 
 .ta_widget_container_desktop {
+	margin-top: 10px;
 	margin-left: 9.5%;
 	margin-right: 6%;
 

@@ -12,10 +12,12 @@ img {
 /*	position: relative;
 	z-index: -1;
 */	background-color: #6E8898;
-	height: 900px;	
-
+	height: 650px;	
+	margin-top: 160px;
 }
-
+.gallery_info{
+	padding-top: 35px;
+}
 .gallery_container {
 	max-width: 1000px; 
 	margin: 0 auto;
@@ -28,7 +30,9 @@ img {
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
-
+	background: rgba(211, 208, 203, 0.8);
+	margin-bottom: -160px;
+    margin-top: 135px;
 
 }
 
@@ -39,8 +43,10 @@ img {
 	padding-bottom: -20px;
 	margin: auto;
 	background-color: #6E8898;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 40px;  
+	padding-right: 40px;
+/*	padding-left: 4%;
+	padding-right: 4%;*/
 	transform: skew(40deg,0deg);
 }
 

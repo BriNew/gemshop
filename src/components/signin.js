@@ -48,15 +48,14 @@ export class SignIn extends React.Component {
     render() {
         return(
             <div>
-                <Slideshow />
-                <div className="sign_in_container_container">
-                    <ul className="sign_in_title">
+                <ul className="sign_in_title">
                         <li className="sign_in"><h2>Sign&nbsp;In</h2></li>
                     </ul>
+                <div className="sign_in_container_container">
                     <div className="sign_in_container">
                         <div className = "sign_in_info">
                     
-                            <form className="sign_in_form" onSubmit={this.logInUser}>
+                            <form className="sign_in_form basic-grey" onSubmit={this.logInUser}>
                                 <div>
                                     <label>Username:</label>
                                     <input id="username" type="text" name="username"/>

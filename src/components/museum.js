@@ -6,14 +6,15 @@ export class Museum extends React.Component {
 	render() {
 		return (
 			<div>
-				<Slideshow />
+				<div>
+					  <ul className="museum_title">
+				        <li className="museum"><h2>Museum</h2></li>
+				      </ul>
+			    </div>
 				<div className="museum_container_container">
-					<ul className="museum_title">
-						<li className="museum"><h2>Museum</h2></li>
-					</ul>
-					<div className="story_container">
+					<div className="museum_container">
 						<div className = "museum_info">
-							<p>
+							<p className="museum_first_line">
 							Museum:
 							</p>
 

@@ -8,14 +8,17 @@ export class Story extends React.Component {
 	render() {
 		return (
 			<div>
+				<div>
+					  <ul className="story_title">
+				        <li className="about"><h2>About</h2></li>
+				      </ul>
+			    </div>
 
 				<div className="story_container_container">
-					<ul className="story_title">
-						<li className="about"><h2>About</h2></li>
-					</ul>
+
 					<div className="story_container">
 						<div className = "story">
-							<p>
+							<p className="story_line_1">
 							How it all started:
 							</p>
 							

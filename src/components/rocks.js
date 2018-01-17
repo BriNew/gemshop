@@ -37,10 +37,10 @@ export class Rocks extends React.Component {
             <p>Origin: {data.origin}</p>
             <p>Size: {data.size}</p>
             <p>Color: {data.color}</p>
-            <p>Id: {data.id}</p>
+
             <div className="button_container">
               <button className="remove_button" onClick={() => this.deleteRock(data.id)}>Remove</button>        
-              <button className="edit_button" onClick={this.editRock}>Edit</button>
+             
             </div>
           </div>
           )
@@ -106,11 +106,10 @@ export class Rocks extends React.Component {
   render() {
   	return (
     	<div>
-        <Slideshow />
-        <div className="inv_container_container">
-          <ul className="inv_title">
+        <ul className="inv_title">
             <li className="inv"><h2>Inventory</h2></li>
           </ul>
+        <div className="inv_container_container">
           <div className="inv_container">
             <div className = "inv_info">
               <div>

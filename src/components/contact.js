@@ -4,7 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 const Contact = props => {
 	const { handleSubmit, pristine, reset, submitting } = props;
 	return (
-	    <form onSubmit={handleSubmit}>
+	    <form className="basic-grey contact_form" onSubmit={handleSubmit}>
 	      <div>
 	        <label>Name</label>
 	        <div>
@@ -41,12 +41,12 @@ const Contact = props => {
 	      <div>
 	        <label>Message</label>
 	        <div>
-	          <Field name="message" component="textarea" />
+	          <Field className="message" name="message" component="textarea" />
 	        </div>
 	      </div>
 	      <div>
 	        <button type="submit" disabled={pristine || submitting}>Submit</button>
-	        <button type="button" disabled={pristine || submitting} onClick={reset}>
+	        <button className="clear_button" type="button" disabled={pristine || submitting} onClick={reset}>
 	          Clear Values
 	        </button>
 	      </div>

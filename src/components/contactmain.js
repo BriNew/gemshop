@@ -12,11 +12,10 @@ export class ContactMain extends React.Component {
 	render() {
 		return(
 			  <div>
-				<Slideshow />
-				<div className="contact_container_container">
-					<ul className="contact_title">
+				<ul className="contact_title">
 						<li className="contact"><h2>Contact&nbsp;Us</h2></li>
 					</ul>
+				<div className="contact_container_container">
 					<div className="contact_container">
 						<div className = "contact_info">
 							<Provider store={store}>

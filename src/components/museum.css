@@ -1,7 +1,7 @@
 .museum_container_container {
 	background-color: #6E8898;
-	height: 500px;	
-
+	height: 650px;	
+	margin-top: 160px;
 }
 
 .museum_container {
@@ -16,6 +16,10 @@
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
+	background: rgba(211, 208, 203, 0.8);
+	margin-bottom: -160px;
+    margin-top: 135px;
+
 
 
 }
@@ -36,6 +40,15 @@ h2 {
 	transform: skew(-40deg,0deg);	
 
 
+}
+
+.museum_info {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.museum_first_line {
+	padding-top: 35px;
 }
 
 

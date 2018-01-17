@@ -50,11 +50,10 @@ export class PhotoGallery extends React.Component {
  
     return (
       <div>
-        <Slideshow />
-        <div className="gallery_container_container">
-          <ul className="gallery_title">
+        <ul className="gallery_title">
             <li className="gallery"><h2>Gallery</h2></li>
           </ul>
+        <div className="gallery_container_container">
           <div className="gallery_container">
             <div className = "gallery_info">
               <Gallery images={IMAGES}/>

@@ -4,9 +4,13 @@
 	opacity: 0.85;
 	display: inline-block;
 /*	border: 2px none #E2C044;*/
-	padding: 20px 10px 10px 10px ;
+	padding: 20px 50px 20px 50px ;
 	margin: 20px 10px 10px 10px ;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.add_rocks {
+
 }
 
 .button_container {
@@ -14,11 +18,12 @@
 } 
 
 .add_input {
-/*	padding: 20px 10px 10px 10px ;*/
-	margin: 17.35px 34px 10px 34px;
+	width: 126%;
+	margin: -0.95px 6.7px 10px -18.3px;
 }
 
 .edit_button {
+/*	opacity: .0;*/
 	margin-left: 10px;
 	padding-left: 17px;
 	padding-right: 17px;
@@ -27,8 +32,8 @@
 
 .inv_container_container {
 	background-color: #6E8898;
-	height: 500px;	
-
+	min-height: 650px;	
+	margin-top: 160px;
 }
 
 .inv_container {
@@ -43,7 +48,9 @@
 
 	background-color: #D3D0CB;
 	padding-left: 20%;
-
+	background: rgba(211, 208, 203, 0.8);
+	margin-bottom: -160px;
+    margin-top: 135px;
 
 }
 
@@ -54,8 +61,10 @@
 	padding-bottom: -20px;
 	margin: auto;
 	background-color: #6E8898;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 27.5px; 
+	padding-right: 27.5px;
+/*	padding-left: 4%;
+	padding-right: 4%;*/
 	transform: skew(40deg,0deg);
 }
 

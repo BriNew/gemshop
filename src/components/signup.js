@@ -28,14 +28,13 @@ export class SignUp extends React.Component {
     render() {
         return(
             <div>
-        <Slideshow />
-        <div className="sign_up_container_container">
-          <ul className="sign_up_title">
+        <ul className="sign_up_title">
             <li className="sign_up"><h2>Sign&nbsp;Up</h2></li>
           </ul>
+        <div className="sign_up_container_container">
           <div className="sign_up_container">
             <div className = "sign_up_info">
-              <form onSubmit={this.signUpUser}>
+              <form className="basic-grey sign_up_form" onSubmit={this.signUpUser}>
                 <div>
                     <label>Username:</label>
                     <input id="username" type="text" name="username"/>

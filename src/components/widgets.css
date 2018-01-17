@@ -1,24 +1,46 @@
-@media (min-width: 800px) {
-  .ta_widget_container_mobile {
+@media (min-width: 816px) {
+/*  .ta_widget_container_mobile {
   display: none;
+}*/
+  .ta_widget_container_desktop{
+	display: inline-block;
+	margin-left: 10px
 }
-  .ta_widget_container_desktop, .map_widget {
-  display: inline-block;
+.map_widget_container {
+	display: inline-block;
+	margin-left: 40px;
+}
 
+.map_and_ta {
+	max-width: 800px;
+	margin: auto;
 }
 }
 
-@media(max-width: 875px) {
+/*@media(max-width: 875px) {
   .ta_widget_container_desktop {
   	display: none;
   }
+}*/
+
+@media(max-width: 815px) {
+	.ta_widget_container_desktop {
+		display: none;
+	}
+	.map_and_ta {
+	max-width: 500px;
+	margin: auto;
+}
+.map_widget_container {
+	display: flex;
+	margin-top: 18px;
 }
 
-
+}
 
 .widget_container_container {
 	background-color: #6E8898;
-	height: 650px;	
+	min-height: 650px;	
 	margin-top: 160px;
 /*	opacity: .9;*/
 
@@ -36,11 +58,11 @@
 .widget_titles {
 
 	background-color: #D3D0CB;
-
 	padding-left: 20%;
 	background: rgba(211, 208, 203, 0.8);
 	margin-bottom: -160px;
     margin-top: 135px;
+
 /*	display: none;*/
 
 
@@ -50,12 +72,10 @@
 	display: inline-block;
 	color: white;
 	padding-bottom: -20px;
-/*	margin: auto;*/
+	margin: auto;
 	background-color: #6E8898;
 	padding-left: 44px;
 	padding-right: 44px;
-/*	padding-left: 3%;
-	padding-right: 3%;*/
 	transform: skew(40deg,0deg);
 
 }
@@ -65,23 +85,46 @@ h2 {
 
 }
 
-/*.reviews {
 
-	margin-left: 13.5%;
-	margin-right: 20%;
+.home_greeting_line_1 {
+	padding-top: 35px;
+}
 
+.home_greeting {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+
+/*h2, p {
+	transform: skew(-40deg,0deg);	
+
+}
+
+
+.home_greeting_line_1 {
+	padding-top: 35px;
+    padding-left: 51px;
+}
+
+.home_greeting {
+	margin-top: 0;
+	padding-left: 39px;
+
+	padding-right: 8px;
+	border-left: 1px solid #E2C044;
+
+	transform: skew(40deg,0deg);
+	position: absolute;
+	z-index: 5;
+}
+ 
+ 
+.map_and_ta {
+	border-left: 1px solid #E2C044;
+	position: absolute;
+	z-index: 4;
+	margin-top: 140px;
+	margin-left: 59px;
 }*/
-
- .map_widget_container {
-	display: inline-block;
-	margin-top: 35px;
-}
-
-.ta_widget_container_desktop {
-	margin-top: 10px;
-	margin-left: 9.5%;
-	margin-right: 6%;
-
-
-}
-

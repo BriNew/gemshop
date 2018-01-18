@@ -50,13 +50,13 @@ export class Rocks extends React.Component {
     }).catch(function(error) {
         console.log(error, "not okay");
         localStorage.removeItem("key");
-        // alert('credentials are not valid');
         window.location.href = "/signin";
     });
     
   }
 
-  createRock() {
+  createRock(e) {
+    e.preventDefault();
     console.log('creating rocks');
     fetch('http://localhost:8080/rocks', {
       method: 'POST',
@@ -71,6 +71,16 @@ export class Rocks extends React.Component {
         color: document.getElementById('color').value
       })
     })
+    .then(function(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        }).then(function(response) {
+            console.log("ok");
+            window.location.href = "/rocks";
+        }).catch(function(error) {
+            console.log(error, "not okay");
+        });
   }
 
   deleteRock(e) {
@@ -81,8 +91,17 @@ export class Rocks extends React.Component {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
-
     })
+      .then(function(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        }).then(function(response) {
+            console.log("ok");
+            window.location.href = "/rocks";
+        }).catch(function(error) {
+            console.log(error, "not okay");
+        });
   }
 
   editRock() {
@@ -112,7 +131,7 @@ export class Rocks extends React.Component {
         <div className="inv_container_container">
           <div className="inv_container">
             <div className = "inv_info">
-              <div>
+              <div className="one">
             <form className="rocks add_rocks">
                 <div>
                   <div>

@@ -125,6 +125,8 @@ input[type="submit"]:hover {
 	z-index: 1;
 	position: relative;
 }*/
-
+ p {
+    color: #EBE9E7;
+ }
 
 

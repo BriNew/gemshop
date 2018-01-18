@@ -23,6 +23,18 @@ export class SignUp extends React.Component {
             password: document.getElementById('password').value
           })
         })
+        .then(function(response) {
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        return response.json();
+        }).then(function(response) {
+            console.log("ok");
+            window.location.href = "/signin";
+        }).catch(function(error) {
+            console.log(error, "not okay");
+            alert('that username is taken');
+        });
       }
 
     render() {

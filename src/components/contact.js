@@ -13,6 +13,7 @@ const Contact = props => {
 	            component="input"
 	            type="text"
 	            placeholder="Name"
+	            required
 	          />
 	        </div>
 	      </div>
@@ -24,6 +25,7 @@ const Contact = props => {
 	            component="input"
 	            type="email"
 	            placeholder="Email"
+	            required
 	          />
 	        </div>
 	      </div>
@@ -35,13 +37,14 @@ const Contact = props => {
 	            component="input"
 	            type="text"
 	            placeholder="subject"
+	            required
 	          />
 	        </div>
 	      </div>
 	      <div>
 	        <label>Message</label>
 	        <div>
-	          <Field className="message" name="message" component="textarea" />
+	          <Field className="message" name="message" component="textarea" required />
 	        </div>
 	      </div>
 	      <div>

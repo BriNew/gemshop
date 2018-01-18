@@ -1,12 +1,25 @@
 /*button { border:none; } */
+@media(min-width: 1000px) {
+	.inv_info {
+		display: flex;
+	}
+	.rocks {
+		flex-direction: row;
+    	flex-wrap: wrap;
+/*    	margin: auto;*/
+
+	}
+}
+
 .rocks {
 	background-color: #2E5266;
 	opacity: 0.85;
 	display: inline-block;
-/*	border: 2px none #E2C044;*/
 	padding: 20px 50px 20px 50px ;
 	margin: 20px 10px 10px 10px ;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	flex-wrap: wrap;
+
 }
 
 .add_rocks {
@@ -57,7 +70,7 @@
 .inv {
 
 	display: inline-block;
-	color: white;
+	color: #EBE9E7;
 	padding-bottom: -20px;
 	margin: auto;
 	background-color: #6E8898;
@@ -68,14 +81,29 @@
 	transform: skew(40deg,0deg);
 }
 
+.inv_info {
+	max-width: 1000px;
+/*	margin: auto;*/
+
+}
+
+.one {
+	text-align:center;
+
+}
+
+.rocks {
+/*	display: flex;*/
+/*margin: auto;
+flex-direction: column;*/
+
+}
 
 h2 {
 	transform: skew(-40deg,0deg);	
 }
 
-p {
-	color: #D3D0CB;
-}
+
 /*p:before {
     content:"• ";
 

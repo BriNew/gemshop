@@ -46,7 +46,7 @@ export class SignUp extends React.Component {
         <div className="sign_up_container_container">
           <div className="sign_up_container">
             <div className = "sign_up_info">
-              <form className="basic-grey sign_up_form" onSubmit={this.signUpUser}>
+              <form className="default_form sign_up_form" onSubmit={this.signUpUser}>
                 <div>
                     <label>Username:</label>
                     <input id="username" type="text" name="username"/>

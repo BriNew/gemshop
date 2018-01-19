@@ -8,18 +8,15 @@
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
-/*	height: 500px;*/
 
 }
 
 .contact_title {
-
 	background-color: #D3D0CB;
 	padding-left: 20%;
 	background: rgba(211, 208, 203, 0.8);
 	margin-bottom: -160px;
     margin-top: 135px;
-
 }
 
 .contact {
@@ -31,8 +28,6 @@
 	background-color: #6E8898;
 	padding-left: 18px;
 	padding-right: 18px;
-/*	padding-left: 4%;
-	padding-right: 4%;*/
 	transform: skew(40deg,0deg);
 }
 

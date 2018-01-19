@@ -18,42 +18,28 @@ html {
 }
 
 h1, h2, h3, p, a, button, input, label {
-/*	font-family: 'Open Sans', sans-serif;*/
 	font-family: 'Roboto', sans-serif;
 }
 
-h3 {
-/*	font-family: 'Roboto', sans-serif;*/
-/*	font-family: 'Open Sans', sans-serif;*/
-}
-
-.basic-grey {
+.default_form  {
     margin-left:auto;
     margin-right:auto;
     max-width: 500px;
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
     color: #888;
-/*    text-shadow: 1px 1px 1px #FFF;*/
     border:1px solid #E4E4E4;
 }
-/*.basic-grey h1 {
-    font-size: 25px;
-    padding: 0px 0px 10px 40px;
-    display: block;
-    border-bottom:1px solid #E4E4E4;
-    margin: -10px -15px 30px -10px;;
-    color: #888;
-}*/
-.basic-grey h1>span {
+
+.default_form h1>span {
     display: block;
     font-size: 11px;
 }
-.basic-grey label {
+.default_form label {
     display: block;
     margin: 0px;
 }
-.basic-grey label>span {
+.default_form label>span {
     float: left;
     width: 20%;
     text-align: right;
@@ -61,7 +47,7 @@ h3 {
     margin-top: 10px;
     color: #888;
 }
-.add_input, input[type="text"], .basic-grey input[type="password"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+.add_input, input[type="text"], .default_form input[type="password"], .default_form input[type="email"], .default_form textarea {
     border: 1px solid #DADADA;
     color: #2E5266;
     height: 30px;
@@ -77,22 +63,11 @@ h3 {
     -moz-box-shadow: inset 0px 1px 4px #ECECEC;
     -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
 }
-.basic-grey textarea{
+.default_form textarea{
     padding: 5px 3px 3px 5px;
 }
-.basic-grey select {
-/*    background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right);*/
-    appearance:none;
-    -webkit-appearance:none; 
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 70%;
-    height: 35px;
-    line-height: 25px;
-}
-.basic-grey textarea{
+
+.default_form textarea{
     height:100px;
 }
 
@@ -101,9 +76,7 @@ h3 {
     border: none;
     padding: 10px 25px 10px 25px;
     color: #2E5266;
-/*    box-shadow: 1px 1px 5px #B6B6B6;*/
     border-radius: 3px;
-/*    text-shadow: 1px 1px 1px #9E3F3F;*/
     cursor: pointer;
 }
 
@@ -112,9 +85,7 @@ h3 {
     border: none;
     padding: 10px 25px 10px 25px;
     color: #2E5266;
-/*    box-shadow: 1px 1px 5px #B6B6B6;*/
     border-radius: 3px;
-/*    text-shadow: 1px 1px 1px #2E5266;*/
     cursor: pointer;
 }
 button:hover {
@@ -125,10 +96,6 @@ input[type="submit"]:hover {
     background: #E2C044;
 }
 
-/*.main_container {
-	z-index: 1;
-	position: relative;
-}*/
  p {
     color: #EBE9E7;
  }

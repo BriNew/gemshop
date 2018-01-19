@@ -4,14 +4,19 @@ import './nav.css';
 
 
 export class Nav extends React.Component {
-	logInRoute(e) {
-        e.preventDefault();
-        let token = localStorage.getItem("key");
-        console.log('logInRoute called');
-        console.log('token');
-        if(token = null) {
-            window.location.href = "/login";
-        }
+	// logInRoute(e) {
+ //        e.preventDefault();
+ //        let token = localStorage.getItem("key");
+ //        console.log('logInRoute called');
+ //        console.log('token');
+ //        if(token = null) {
+ //            window.location.href = "/login";
+ //        }
+ //    }
+
+    refreshHome(e){
+    	e.preventDefault();
+    	window.location.reload();
     }
 	render() {
 		return(
@@ -21,7 +26,7 @@ export class Nav extends React.Component {
 						<li className="nav_li">
 							<Link to='/signin'>Sign In</Link>
 						</li>	
-						<li onClick={this.logInUser} className="nav_li">
+						<li className="nav_li">
 							<Link to='/rocks'>Inventory</Link>
 						</li>					
 						<li className="nav_li">
@@ -36,7 +41,7 @@ export class Nav extends React.Component {
 						<li className="nav_li">
 							<Link to='/about'>About</Link>
 						</li>
-						<li className="nav_li ">
+						<li onClick={this.refreshHome}className="nav_li ">
 							<Link to='/'>Home</Link>
 						</li>
 						<li className="social_li social_li_fb">

@@ -4,7 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 const Contact = props => {
 	const { handleSubmit, pristine, reset, submitting } = props;
 	return (
-	    <form className="basic-grey contact_form" onSubmit={handleSubmit}>
+	    <form className="default_form contact_form" onSubmit={handleSubmit}>
 	      <div>
 	        <label>Name</label>
 	        <div>
@@ -58,5 +58,5 @@ const Contact = props => {
 };
 
 export default reduxForm({
-  form: 'simple', // a unique identifier for this form
+  form: 'simple', 
 })(Contact);

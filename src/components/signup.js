@@ -1,5 +1,6 @@
 import React from 'react';
 import './signup.css';
+import {URL} from '../backend.js';
 
 export class SignUp extends React.Component {
     constructor(props) {
@@ -10,7 +11,7 @@ export class SignUp extends React.Component {
       signUpUser(e) {
         e.preventDefault();
         console.log('signing up');
-        fetch('http://localhost:8080/users', {
+        fetch(URL + 'users', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',

@@ -38,8 +38,8 @@ export class Nav extends React.Component {
 						<li className="social_li social_li_fb">
 							<a target="_blank" href="https://www.facebook.com/pages/Chapmans-Gem-Mineral-Shop-Museum/127570647298100" className="fa fa-facebook"></a>
 						</li>
-						<li className="social_li social_li_twitter">
-							<a target="_blank" href="#" className="fa fa-twitter"></a>
+						<li className="social_li social_li_yelp">
+							<a target="_blank" href="https://www.yelp.com/biz/chapmans-gem-and-mineral-shop-and-museum-fortuna" className="fa fa-yelp"></a>
 						</li>
 						<li className="social_li social_li_instagram">
 							<a target="_blank" href="https://www.instagram.com/explore/locations/260451233/" className="fa fa-instagram"></a>

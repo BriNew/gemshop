@@ -1,5 +1,6 @@
 import React from 'react';
 import './rocks.css';
+import {URL} from '../backend.js';
 
 export class Rocks extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export class Rocks extends React.Component {
   
   componentDidMount() {
     let token = localStorage.getItem("key");
-    fetch('http://localhost:8080/rocks', {
+    fetch(URL + 'rocks', {
       method: 'GET',
       headers: {
         'Authorization': `bearer ${token}`

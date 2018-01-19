@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './signin.css';
+import {URL} from '../backend.js';
+console.log('blabla', URL);
 
 
 export class SignIn extends React.Component {
@@ -12,7 +14,7 @@ export class SignIn extends React.Component {
     logInUser(e) {
         e.preventDefault();
         console.log('logging in');
-        fetch('http://localhost:8080/signin', {
+        fetch(URL + 'signin', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',

@@ -1,8 +1,5 @@
 import React from 'react';
 import './story.css';
-import {Slideshow} from './slideshow';
-
-
 
 export class Story extends React.Component {
 	render() {

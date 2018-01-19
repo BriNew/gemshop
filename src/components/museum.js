@@ -1,6 +1,5 @@
 import React from 'react';
 import './museum.css';
-import {Slideshow} from './slideshow';
 
 export class Museum extends React.Component {
 	render() {
@@ -17,7 +16,6 @@ export class Museum extends React.Component {
 							<p className="museum_first_line">
 							Museum:
 							</p>
-
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas dictum 
 							odio at rutrum. In est tellus, rutrum eu feugiat vitae, eleifend finibus lacus. 
 							Duis ac odio congue magna imperdiet dictum eu id enim. Donec pretium ex vel rhoncus blandit. 

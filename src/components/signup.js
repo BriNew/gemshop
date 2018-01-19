@@ -1,7 +1,5 @@
 import React from 'react';
 import './signup.css';
-import {Slideshow} from './slideshow';
-
 
 export class SignUp extends React.Component {
     constructor(props) {
@@ -46,7 +44,7 @@ export class SignUp extends React.Component {
         <div className="sign_up_container_container">
           <div className="sign_up_container">
             <div className = "sign_up_info">
-              <form className="default_form sign_up_form" onSubmit={this.signUpUser}>
+              <form role="form" className="default_form sign_up_form" onSubmit={this.signUpUser}>
                 <div>
                     <label>Username:</label>
                     <input id="username" type="text" name="username"/>

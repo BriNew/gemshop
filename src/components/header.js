@@ -26,7 +26,7 @@ export class Header extends React.Component {
 			logOutButton = <LogOut />
 		}
 		return(
-			<header>
+			<header role="banner">
 				<div className="header_container">
 					<h1 className="banner_fullscreen">Chapman's Gem & Mineral Shop</h1>
 					<h1 className="banner_mobile">Chapman's Gem Shop</h1>

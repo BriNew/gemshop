@@ -4,15 +4,6 @@ import './nav.css';
 
 
 export class Nav extends React.Component {
-	// logInRoute(e) {
- //        e.preventDefault();
- //        let token = localStorage.getItem("key");
- //        console.log('logInRoute called');
- //        console.log('token');
- //        if(token = null) {
- //            window.location.href = "/login";
- //        }
- //    }
 
     refreshHome(e){
     	e.preventDefault();

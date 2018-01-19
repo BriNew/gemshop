@@ -8,14 +8,9 @@
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
-/*	height: 500px;*/
-
 }
 
 .story_title {
-
-	/*background-color: #D3D0CB;
-	padding-left: 20%;*/
 	background-color: #D3D0CB;
 	padding-left: 20%;
 	background: rgba(211, 208, 203, 0.8);
@@ -26,7 +21,6 @@
 }
 
 .about {
-
 	display: inline-block;
 	color: #EBE9E7;
 	padding-bottom: -20px;
@@ -48,7 +42,6 @@ h2 {
 .story {
 	padding-left: 8px;
 	padding-right: 8px;
-/*	color: black;*/
 }
 
 

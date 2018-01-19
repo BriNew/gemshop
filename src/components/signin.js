@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Slideshow} from './slideshow';
 import './signin.css';
 
 
@@ -55,7 +54,7 @@ export class SignIn extends React.Component {
                     <div className="sign_in_container">
                         <div className = "sign_in_info">
                     
-                            <form className="sign_in_form default_form" onSubmit={this.logInUser}>
+                            <form role="form" className="sign_in_form default_form" onSubmit={this.logInUser}>
                                 <div>
                                     <label>Username:</label>
                                     <input id="username" type="text" name="username"/>

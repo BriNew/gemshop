@@ -1,6 +1,4 @@
 import React from 'react';
-// import './signup.css';
-import {Slideshow} from './slideshow';
 import {SignIn} from './signin';
 
 let token = localStorage.getItem("key");
@@ -14,8 +12,7 @@ export class LogOut extends React.Component {
     }
 
 
-      logOutUser(e) {
-        // e.preventDefault();
+      logOutUser() {
         console.log('logging out');
         localStorage.removeItem("key");
         localStorage.removeItem("user");

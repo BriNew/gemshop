@@ -41,9 +41,9 @@ export class Widgets extends React.Component {
 
 
 	            	<div className="map_widget_container">
-				      <iframe className="map_widget" width="500px" height="374px" frameborder="0" 
+				      <iframe className="map_widget" width="500px" height="374px" frameBorder="0" 
 				      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-VJ-QsO1FQRIQFQSgU1gvc&key=AIzaSyDrWGFKHiOsKlelMMMxkl0_J_KBOCThMmU" 
-				      allowfullscreen></iframe>
+				      allowFullScreen></iframe>
 			      	</div>
 		      	</div>
 			    </div>

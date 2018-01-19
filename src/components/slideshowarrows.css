@@ -1,8 +1,0 @@
-.previous_slide, .next_slide {
-	color: black;
-	z-index: 1;
-/*	display: inline-block;*/
-/*	align-items: center;
-  	justify-content: center;*/
-  	margin-top:-500px;
-}

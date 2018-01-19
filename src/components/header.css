@@ -48,10 +48,6 @@ header {
 	padding-bottom: 6.7px;
 }
 
-/*.results, .results_static, .banner{
-  display: flex;
-}*/
-
 @media (max-width: 1000px) and (min-width: 369px) { 
   .banner_fullscreen {
     display: none;
@@ -67,9 +63,6 @@ header {
 @media (max-width: 641px) { 
 header {
 	padding-bottom: 75px;
-}
-.header_container{
-/*	display: block;*/
 }
 
 .current_user_logout_container {

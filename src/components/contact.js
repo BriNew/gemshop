@@ -4,7 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 const Contact = props => {
 	const { handleSubmit, pristine, reset, submitting } = props;
 	return (
-	    <form className="default_form contact_form" onSubmit={handleSubmit}>
+	    <form role="form" className="default_form contact_form" onSubmit={handleSubmit}>
 	      <div>
 	        <label>Name</label>
 	        <div>

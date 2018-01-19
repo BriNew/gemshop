@@ -1,6 +1,5 @@
 import React from "react";
 import { Provider } from "react-redux";
-import {Slideshow} from './slideshow';
 import store from "./store";
 import showResults from "./showresults";
 import Contact from "./contact";

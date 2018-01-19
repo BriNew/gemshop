@@ -9,9 +9,7 @@ img {
 }
 
 .gallery_container_container {
-/*	position: relative;
-	z-index: -1;
-*/	background-color: #6E8898;
+	background-color: #6E8898;
 	height: 650px;	
 	margin-top: 160px;
 }
@@ -22,7 +20,6 @@ img {
 	max-width: 1000px; 
 	margin: 0 auto;
 	background-color: #6E8898;
-/*	height: 500px;*/
 
 }
 
@@ -45,8 +42,6 @@ img {
 	background-color: #6E8898;
 	padding-left: 40px;  
 	padding-right: 40px;
-/*	padding-left: 4%;
-	padding-right: 4%;*/
 	transform: skew(40deg,0deg);
 }
 

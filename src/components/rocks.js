@@ -1,5 +1,4 @@
 import React from 'react';
-import {Slideshow} from './slideshow';
 import './rocks.css';
 
 export class Rocks extends React.Component {
@@ -132,31 +131,31 @@ export class Rocks extends React.Component {
           <div className="inv_container">
             <div className = "inv_info">
               <div className="one">
-            <form className="rocks add_rocks">
-                <div>
-                  <div>
-                      <input className="add_input" placeholder="Type" id= "type" name="type"></input>           
-                  </div>
-                </div>
-                <div>
-                  <div>
-                      <input className="add_input" placeholder="Origin" id= "origin" name="origin"></input>           
-                  </div>
-                </div>
-                <div>
-                  <div>
-                      <input className="add_input" placeholder="Size" id= "size" name="size"></input>           
-                  </div>
-                </div>
-                <div>
-                  <div>
-                      <input className="add_input" placeholder="Color" id= "color" name="color"></input>           
-                  </div>
-                </div>
-                <div className="button_container">
-                  <button className="add_button" onClick={this.createRock}>Add</button>
-                </div>
-              </form>
+                <form role="form" className="rocks add_rocks">
+                    <div>
+                      <div>
+                          <input className="add_input" placeholder="Type" id= "type" name="type"></input>           
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                          <input className="add_input" placeholder="Origin" id= "origin" name="origin"></input>           
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                          <input className="add_input" placeholder="Size" id= "size" name="size"></input>           
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                          <input className="add_input" placeholder="Color" id= "color" name="color"></input>           
+                      </div>
+                    </div>
+                    <div className="button_container">
+                      <button className="add_button" onClick={this.createRock}>Add</button>
+                    </div>
+                  </form>
               {this.state.rocks}
               <div>
               

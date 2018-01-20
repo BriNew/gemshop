@@ -58,7 +58,7 @@ export class Rocks extends React.Component {
   createRock(e) {
     e.preventDefault();
     console.log('creating rocks');
-    fetch('http://localhost:8080/rocks', {
+    fetch(URL + 'rocks', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -85,7 +85,7 @@ export class Rocks extends React.Component {
 
   deleteRock(e) {
       console.log(e);
-      fetch(`http://localhost:8080/rocks/${e}`, {
+      fetch(`${URL}rocks/${e}`, {
         method: 'DELETE',
         headers: {
           'Accept': 'application/json',
@@ -102,24 +102,6 @@ export class Rocks extends React.Component {
         }).catch(function(error) {
             console.log(error, "not okay");
         });
-  }
-
-  editRock() {
-      console.log('deleting rock');
-      fetch('http://localhost:8080/rocks/:id', {
-        method: 'PUT',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          type: "type",
-          origin: "origin",
-          size: "size",
-          color: "color"
-      })
-
-    })
   }
 
   render() {

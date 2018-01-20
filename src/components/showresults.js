@@ -1,6 +1,8 @@
+import {URL} from '../backend.js';
+
 export default (async function showResults(values) {
   console.log(values);
-  fetch('http://localhost:8080/contact', {
+  fetch(URL + 'contact', {
   	method: 'POST', 
   	headers: {
       'Accept': 'application/json',

@@ -10,7 +10,6 @@ export class Rocks extends React.Component {
     };
     this.createRock=this.createRock.bind(this)
     this.deleteRock=this.deleteRock.bind(this)
-    this.editRock=this.editRock.bind(this)
   }
   
   componentDidMount() {

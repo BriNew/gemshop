@@ -7,7 +7,7 @@ immediately communicating necessary information to potential customers passing t
 For my own practice, I included a system to register and authorize users to manipulate an inventory. This system
 will be left out of the version given to Chapman's. 
 
-![image](https://user-images.githubusercontent.com/24151430/32761036-0ba7ed98-c8a6-11e7-86a8-410877535a96.png)
+![image](https://user-images.githubusercontent.com/gem_shop_home.png)
 
 ### Summary
 This app has purpose for the shop's customers, and for the employees. Being visible from HWY 101 in the midst of 

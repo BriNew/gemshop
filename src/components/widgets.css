@@ -4,21 +4,30 @@
 /*	margin-left: 10px;*/
 	height: 0;
     display: inline-block;
+    position: absolute;
+    margin: auto;
+    margin-right: 10px;
+
 }
 
 .widSSP {
 /*	margin-top: -1px;*/
 /*	display: none;*/
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
 }
 .map_widget_container {
 	display: inline-block;
-	margin-left: 40px;
+	margin-left: 300px;
+/*	position: absolute;*/
+    margin-top: 18px;
+
 }
 
 .map_and_ta {
 	max-width: 800px;
 	margin: auto;
+/*	position: relative;*/
 
 
 }
@@ -52,7 +61,7 @@
 .widget_container_container {
 	background-color: #6E8898;
 	min-height: 650px;	
-	margin-top: 160px;
+	margin-top: 159px;
 
 }
 

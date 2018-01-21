@@ -34,6 +34,7 @@ export class Widgets extends React.Component {
 			                </li>
 			              </ul>
 			          </div>
+		
 
 		            <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=774&amp;
 		            locationId=2161569&amp;lang=en_US&amp;rating=true&amp;nreviews=3&amp;

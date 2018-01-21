@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+### gemshop
+
+This is the front end code for Chapman's Gem & Mineral Shop. The client wanted a site with a simple, modern feel, 
+immediately communicating necessary information to potential customers passing through the area, nothing more. 
+For my own practice, I included a system to register and authorize users to manipulate an inventory. This system
+will be left out of the version given to Chapman's. 
+
+![image](https://user-images.githubusercontent.com/24151430/32761036-0ba7ed98-c8a6-11e7-86a8-410877535a96.png)
+
+### Summary
+This app has purpose for the shop's customers, and for the employees. Being visible from HWY 101 in the midst of 
+Nortern California's Redwood forest brings a lot of tourists. It was decided that most site traffic will from 
+these tourists, making split decisions about what attractions to visit while on the road. The tourist will be
+immediately presented with the shop' outstanding reviews, hours, and location. If we still have the potential
+customer's attention, they may continue exploring the shop's history, gallery, museum, or contact the shop through
+email. An employee of the shop may sign up, sign in, and manipulate the shop's inventory.
+
+### Technology Used
+ - HTML5
+ - CSS3
+ - ReactJS
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

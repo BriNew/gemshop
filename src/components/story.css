@@ -1,25 +1,3 @@
-.story_container_container {
-	background-color: #6E8898;
-	height: 650px;	
-	margin-top: 159px;
-}
-
-.story_container {
-	max-width: 1000px; 
-	margin: 0 auto;
-	background-color: #6E8898;
-}
-
-.story_title {
-	background-color: #D3D0CB;
-	padding-left: 20%;
-	background: rgba(211, 208, 203, 0.8);
-	margin-bottom: -160px;
-    margin-top: 135px;
-
-
-}
-
 .about {
 	display: inline-block;
 	color: #EBE9E7;
@@ -29,10 +7,6 @@
 	padding-left: 44.5px;
 	padding-right: 44.5px;
 	transform: skew(40deg,0deg);
-}
-
-h2 {
-	transform: skew(-40deg,0deg);	
 }
 
 .story_line_1 {

@@ -11,11 +11,11 @@ export class ContactMain extends React.Component {
 	render() {
 		return(
 			  <div>
-				<ul className="contact_title">
-						<li className="contact"><h2>Contact&nbsp;Us</h2></li>
-					</ul>
-				<div className="contact_container_container">
-					<div className="contact_container">
+				  <ul className="contact_title content_title">
+				      <li className="contact content"><h2>Contact&nbsp;Us</h2></li>
+				  </ul>
+				<div className="contact_container_container content_container_container">
+					<div className="contact_container content_container">
 						<div className = "contact_info">
 							<Provider store={store}>
 							    <div style={{ padding: 15 }}>

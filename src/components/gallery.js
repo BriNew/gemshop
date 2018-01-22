@@ -2,12 +2,8 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import './gallery.css';
 
-
- 
 export class PhotoGallery extends React.Component {
- 
-  render() {
- 
+  render() { 
     const IMAGES =
 [{
         src: "https://source.unsplash.com/5EoWFa_Htdo/800x599",
@@ -46,14 +42,13 @@ export class PhotoGallery extends React.Component {
         caption: "more rocks"
 }
 ]
- 
     return (
       <div>
-        <ul className="gallery_title">
-            <li className="gallery"><h2>Gallery</h2></li>
+          <ul className="gallery_title content_title">
+              <li className="gallery content"><h2>Gallery</h2></li>
           </ul>
-        <div className="gallery_container_container">
-          <div className="gallery_container">
+        <div className="gallery_container_container content_container_container">
+          <div className="gallery_container content_container">
             <div className = "gallery_info">
               <Gallery images={IMAGES}/>
             </div>

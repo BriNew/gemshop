@@ -13,7 +13,6 @@ import {PhotoGallery} from "./gallery";
 import {LogOut} from "./logout";
 import '../index.css';
 
-
 export class Main extends React.Component {
 	render() {
 		return(

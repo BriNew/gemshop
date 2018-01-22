@@ -11,7 +11,6 @@ export class Rocks extends React.Component {
     this.createRock=this.createRock.bind(this)
     this.deleteRock=this.deleteRock.bind(this)
   }
-  
   componentDidMount() {
     let token = localStorage.getItem("key");
     fetch(URL + 'rocks', {
@@ -27,8 +26,6 @@ export class Rocks extends React.Component {
         }
         return results.json();
     }).then(data => {
-      console.log('ok');
-      console.log(data);
       let rock = data.rocks.map((data, i) => {
         return(
           <div key={i} className="rocks" >
@@ -36,27 +33,21 @@ export class Rocks extends React.Component {
             <p>Origin: {data.origin}</p>
             <p>Size: {data.size}</p>
             <p>Color: {data.color}</p>
-
             <div className="button_container">
-              <button className="remove_button" onClick={() => this.deleteRock(data.id)}>Remove</button>        
-             
+              <button className="remove_button" onClick={() => this.deleteRock(data.id)}>Remove</button>                 
             </div>
           </div>
           )
       })
       this.setState({rocks: rock});
-      console.log("state", this.state.rocks)
     }).catch(function(error) {
-        console.log(error, "not okay");
+        console.log(error);
         localStorage.removeItem("key");
         window.location.href = "/signin";
     });
-    
   }
-
   createRock(e) {
     e.preventDefault();
-    console.log('creating rocks');
     fetch(URL + 'rocks', {
       method: 'POST',
       headers: {
@@ -75,15 +66,12 @@ export class Rocks extends React.Component {
             throw Error(response.statusText);
         }
         }).then(function(response) {
-            console.log("ok");
             window.location.href = "/rocks";
         }).catch(function(error) {
-            console.log(error, "not okay");
+            console.log(error);
         });
   }
-
   deleteRock(e) {
-      console.log(e);
       fetch(`${URL}rocks/${e}`, {
         method: 'DELETE',
         headers: {
@@ -96,23 +84,21 @@ export class Rocks extends React.Component {
             throw Error(response.statusText);
         }
         }).then(function(response) {
-            console.log("ok");
             window.location.href = "/rocks";
         }).catch(function(error) {
-            console.log(error, "not okay");
+            console.log(error);
         });
   }
-
   render() {
   	return (
     	<div>
-        <ul className="inv_title">
-            <li className="inv"><h2>Inventory</h2></li>
+        <ul className="inv_title content_title">
+            <li className="inv content"><h2>Inventory</h2></li>
           </ul>
-        <div className="inv_container_container">
-          <div className="inv_container">
+        <div className="inv_container_container content_container_container">
+          <div className="inv_container content_container">
             <div className = "inv_info">
-              <div className="one">
+              <div className="form_container">
                 <form role="form" className="rocks add_rocks">
                     <div>
                       <div>
@@ -139,8 +125,7 @@ export class Rocks extends React.Component {
                     </div>
                   </form>
               {this.state.rocks}
-              <div>
-              
+              <div>           
             </div>
           </div>
         </div>

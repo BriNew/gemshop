@@ -2,9 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './nav.css';
 
-
 export class Nav extends React.Component {
-
     refreshHome(e){
     	e.preventDefault();
     	window.location.reload();
@@ -49,13 +47,10 @@ export class Nav extends React.Component {
 						</li>
 					</ul>
 					<div className="hamburger">
-
-					    <input type="checkbox" />
-					       
+					    <input type="checkbox" />				       
 					    <span className="burger"></span>
 					    <span className="burger"></span>
-					    <span className="burger"></span>
-					    
+					    <span className="burger"></span>		    
 					    <ul className="hamburger_menu">
 					      <a><li><Link to='/'>Home</Link></li></a>
 					      <a><li><Link to='/about'>About</Link></li></a>

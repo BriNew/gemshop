@@ -1,26 +1,4 @@
-.contact_container_container {
-	background-color: #6E8898;
-	height: 650px;	
-	margin-top: 159px;
-}
-
-.contact_container {
-	max-width: 1000px; 
-	margin: 0 auto;
-	background-color: #6E8898;
-
-}
-
-.contact_title {
-	background-color: #D3D0CB;
-	padding-left: 20%;
-	background: rgba(211, 208, 203, 0.8);
-	margin-bottom: -160px;
-    margin-top: 135px;
-}
-
 .contact {
-
 	display: inline-block;
 	color: #EBE9E7;
 	padding-bottom: -20px;
@@ -29,10 +7,6 @@
 	padding-left: 18px;
 	padding-right: 18px;
 	transform: skew(40deg,0deg);
-}
-
-h2 {
-	transform: skew(-40deg,0deg);	
 }
 
 .contact_form {

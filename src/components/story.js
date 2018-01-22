@@ -6,20 +6,17 @@ export class Story extends React.Component {
 		return (
 			<div>
 				<div>
-					  <ul className="story_title">
-				        <li className="about"><h2>About</h2></li>
+					  <ul className="story_title content_title">
+				        <li className="about content"><h2>About</h2></li>
 				      </ul>
 			    </div>
-
-				<div className="story_container_container">
-
-					<div className="story_container">
+				<div className="story_container_container content_container_container">
+					<div className="story_container content_container">
 						<div className = "story">
 							<p className="story_line_1">
 							How it all started:
 							</p>
-							
-							
+								
 							<p>Buzz and Charlotte Chapman opened their first rock shop in 1950, 
 							on the Rogue River in Oregon. It was named the Gem Cottage. In 1959, 
 							they opened their second rock shop in Miranda, California under its current name, 

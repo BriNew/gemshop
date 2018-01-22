@@ -35,10 +35,12 @@ h1, h2, h3, p, a, button, input, label {
     display: block;
     font-size: 11px;
 }
+
 .default_form label {
     display: block;
     margin: 0px;
 }
+
 .default_form label>span {
     float: left;
     width: 20%;
@@ -47,6 +49,7 @@ h1, h2, h3, p, a, button, input, label {
     margin-top: 10px;
     color: #888;
 }
+
 .add_input, input[type="text"], .default_form input[type="password"], .default_form input[type="email"], .default_form textarea {
     border: 1px solid #DADADA;
     color: #2E5266;
@@ -63,6 +66,7 @@ h1, h2, h3, p, a, button, input, label {
     -moz-box-shadow: inset 0px 1px 4px #ECECEC;
     -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
 }
+
 .default_form textarea{
     padding: 5px 3px 3px 5px;
 }
@@ -88,6 +92,7 @@ h1, h2, h3, p, a, button, input, label {
     border-radius: 3px;
     cursor: pointer;
 }
+
 button:hover {
     background: #E2C044;
 }
@@ -100,4 +105,38 @@ input[type="submit"]:hover {
     color: #EBE9E7;
  }
 
+.content_container_container {
+    background-color: #6E8898;
+    height: 650px;  
+    margin-top: 159px;
+}
+
+.content_container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    background-color: #6E8898;
+}
+
+.content_title {
+    background-color: #D3D0CB;
+    padding-left: 20%;
+    background: rgba(211, 208, 203, 0.8);
+    margin-bottom: -160px;
+    margin-top: 135px;
+}
+
+.content {
+    display: inline-block;
+    color: #EBE9E7;
+    padding-bottom: -20px;
+    margin: auto;
+    background-color: #6E8898;
+    padding-left: 18px;
+    padding-right: 18px;
+    transform: skew(40deg,0deg);
+}
+
+h2 {
+    transform: skew(-40deg,0deg);   
+}
 

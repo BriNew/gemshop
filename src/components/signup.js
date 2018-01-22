@@ -7,10 +7,8 @@ export class SignUp extends React.Component {
         super(props);
         this.signUpUser=this.signUpUser.bind(this)
     }
-
       signUpUser(e) {
         e.preventDefault();
-        console.log('signing up');
         fetch(URL + 'users', {
           method: 'POST',
           headers: {
@@ -28,22 +26,20 @@ export class SignUp extends React.Component {
         }
         return response.json();
         }).then(function(response) {
-            console.log("ok");
             window.location.href = "/signin";
         }).catch(function(error) {
-            console.log(error, "not okay");
+            console.log(error);
             alert('that username is taken');
         });
       }
-
     render() {
         return(
             <div>
-        <ul className="sign_up_title">
+        <ul className="sign_up_title content_title">
             <li className="sign_up"><h2>Sign&nbsp;Up</h2></li>
           </ul>
-        <div className="sign_up_container_container">
-          <div className="sign_up_container">
+        <div className="sign_up_container_container content_container_container">
+          <div className="sign_up_container content_container">
             <div className = "sign_up_info">
               <form role="form" className="default_form sign_up_form" onSubmit={this.signUpUser}>
                 <div>

@@ -16,8 +16,6 @@ export class Header extends React.Component {
         	this.state={loggedIn: false};
         }
     } 
-
-
 	render() {
 		let loggedInMessage;
 		let logOutButton;
@@ -40,7 +38,6 @@ export class Header extends React.Component {
 						{logOutButton}
 					</div>
 				</div>
-
 			</header>
 			);
 	}

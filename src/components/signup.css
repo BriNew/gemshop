@@ -1,31 +1,8 @@
 @media(max-width: 535px) {
-	.sign_up_form{
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+.sign_up_form{
+	margin-left: 10px;
+	margin-right: 10px;
 }
-
-.sign_up_container_container {
-	background-color: #6E8898;
-	height: 650px;	
-	margin-top: 159px;
-}
-
-
-.sign_up_container {
-	max-width: 1000px; 
-	margin: 0 auto;
-	background-color: #6E8898;
-}
-
-.sign_up_title {
-
-	background-color: #D3D0CB;
-	padding-left: 20%;
-	background: rgba(211, 208, 203, 0.8);
-	margin-bottom: -160px;
-    margin-top: 135px;
-
 }
 
 .sign_up {
@@ -37,10 +14,6 @@
 	padding-left: 35.5px; 
 	padding-right: 35.5px;
 	transform: skew(40deg,0deg);
-}
-
-h2 {
-	transform: skew(-40deg,0deg);	
 }
 
 .sign_up_form {

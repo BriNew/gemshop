@@ -6,12 +6,12 @@ export class Museum extends React.Component {
 		return (
 			<div>
 				<div>
-					  <ul className="museum_title">
-				        <li className="museum"><h2>Museum</h2></li>
+					  <ul className="museum_title content_title">
+				        <li className="museum content"><h2>Museum</h2></li>
 				      </ul>
 			    </div>
-				<div className="museum_container_container">
-					<div className="museum_container">
+				<div className="museum_container_container content_container_container">
+					<div className="museum_container content_container">
 						<div className = "museum_info">
 							<p className="museum_first_line">
 							Museum:

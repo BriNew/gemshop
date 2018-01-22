@@ -107,7 +107,7 @@ input[type="submit"]:hover {
 
 .content_container_container {
     background-color: #6E8898;
-    height: 650px;  
+    min-height: 650px;  
     margin-top: 159px;
 }
 

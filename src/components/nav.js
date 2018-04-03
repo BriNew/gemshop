@@ -52,13 +52,13 @@ export class Nav extends React.Component {
 					    <span className="burger"></span>
 					    <span className="burger"></span>		    
 					    <ul className="hamburger_menu">
-					      <a><li><Link to='/'>Home</Link></li></a>
-					      <a><li><Link to='/about'>About</Link></li></a>
-					      <a><li><Link to='/museum'>Museum</Link></li></a>
-					      <a><li><Link to='/photos'>Gallery</Link></li></a>
-					      <a><li><Link to='/contactmain'>Contact</Link></li></a>
-					      <a><li><Link to='/rocks'>Inventory</Link></li></a>
-					      <a><li><Link to='/signin'>Sign In</Link></li></a>
+					      <li><Link to='/'>Home</Link></li>
+					      <li><Link to='/about'>About</Link></li>
+					      <li><Link to='/museum'>Museum</Link></li>
+					      <li><Link to='/photos'>Gallery</Link></li>
+					      <li><Link to='/contactmain'>Contact</Link></li>
+					      <li><Link to='/rocks'>Inventory</Link></li>
+					      <li><Link to='/signin'>Sign In</Link></li>
 					    </ul>
 					  </div>
 				</nav>

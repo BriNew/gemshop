@@ -13,20 +13,19 @@ export class Widgets extends React.Component {
 			<div className="widget_container_container content_container_container">
 		    	<div className="widget_container content_container">
 				  <div className="home_greeting_container">
-				  	<p className="home_greeting">
+				  	<div className="home_greeting">
 				  	<p className="home_greeting_line_1">Welcome to Chapman's Gem and Mineral Shop.</p>
 				  	<p>We are open 7 days a week, 9 - 5.
 				  	Come visit the #1 rated attraction in the area, and spend time in our ever expanding museum. Check out our
 				  	reviews and location below. Hope to see you soon!</p> 
-				  	</p>
+				  	</div>
 				  </div>
 				  <div className="map_and_ta">
 				      <div id="TA_selfserveprop774" className="ta_widget_container_desktop">
-			              <ul id="0hMMZifw6g" class="TA_links V8th9Pr6YN">
-			                <li id="tr9bRR" class="VSIgkvQb">
+			              <ul id="0hMMZifw6g" className="TA_links V8th9Pr6YN">
+			                <li id="tr9bRR" className="VSIgkvQb">
 			                  <a target="_blank" href="https://www.tripadvisor.com/">
-			                  <img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png"
-			                  alt="TripAdvisor"/></a>
+</a>
 			                </li>
 			              </ul>
 			          </div>

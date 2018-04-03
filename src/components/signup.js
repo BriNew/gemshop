@@ -25,9 +25,8 @@ export class SignUp extends React.Component {
             throw Error(response.statusText);
         }
         return response.json();
-        })
-          .then(function(response) {
-            alert("success");
+        }) .then(function(response) {
+            alert("Thank you for signing up!");
         }) .then(function(response) {
             window.location.href = "/signin";
         })

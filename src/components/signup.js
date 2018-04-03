@@ -25,9 +25,13 @@ export class SignUp extends React.Component {
             throw Error(response.statusText);
         }
         return response.json();
-        }).then(function(response) {
+        })
+          .then(function(response) {
+            alert("success");
+        }) .then(function(response) {
             window.location.href = "/signin";
-        }).catch(function(error) {
+        })
+          .catch(function(error) {
             console.log(error);
             alert('that username is taken');
         });

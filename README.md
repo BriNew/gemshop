@@ -1,4 +1,4 @@
-### gemshop
+### Chapman's Gem Shop - front end
 http://www.rockshopdemo.com/
 
 This is the front end code for Chapman's Gem & Mineral Shop. The client wanted a site with a simple, modern feel, 
